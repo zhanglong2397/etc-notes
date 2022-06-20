@@ -4,7 +4,7 @@ module.exports = {
   description: '一体系',
   head: [
     ['link', { rel: 'icon', href: '/assets/image/favicon.ico' }],
-    ['meta', { name: 'keyword', content: '一体系项目介绍' }]
+    ['meta', { name: 'keyword', content: '一体系项目介绍' }],
   ],
   themeConfig: {
     logo: '/assets/image/logo.png',
@@ -17,8 +17,8 @@ module.exports = {
         ariaLabel: 'Language Menu',
         items: [
           { text: 'Hone', link: '/' },
-          { text: 'About', link: '/about' }
-        ]
+          { text: 'About', link: '/about' },
+        ],
       },
       {
         text: 'Languages',
@@ -27,18 +27,18 @@ module.exports = {
             text: 'Group1',
             items: [
               { text: 'css', link: '/css/' },
-              { text: 'js', link: '/js/' }
-            ]
+              { text: 'js', link: '/js/' },
+            ],
           },
           {
             text: 'Group2',
             items: [
               { text: 'Hone', link: '/' },
-              { text: 'About', link: '/about' }
-            ]
-          }
-        ]
-      }
+              { text: 'About', link: '/about' },
+            ],
+          },
+        ],
+      },
     ],
     sidebar: {
       // '/css/': ['a-css', 'b-css'],
@@ -48,25 +48,25 @@ module.exports = {
           path: '/css/', // 可选的, 标题的跳转链接，应为绝对路径且必须存在
           collapsable: false, // 可选的, 默认值是 true,
           sidebarDepth: 1, // 可选的, 默认值是 1
-          children: ['a-css', 'b-css']
+          children: ['a-css', 'b-css'],
         },
-        {
-          title: 'Group 2', // 必要的
-          path: '/js/', // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-          collapsable: false, // 可选的, 默认值是 true,
-          sidebarDepth: 1, // 可选的, 默认值是 1
-          children: ['a-js', 'b-js']
-        }
+        // {
+        //   title: 'Group 2', // 必要的
+        //   path: '/js/', // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+        //   collapsable: false, // 可选的, 默认值是 true,
+        //   sidebarDepth: 1, // 可选的, 默认值是 1
+        //   children: ['a-js', 'b-js']
+        // }
       ],
-      '/js/': ['a-js', 'b-js']
+      '/js/': ['a-js', 'b-js'],
     },
-    lastUpdated: '更新时间' // 最后更新时间
+    lastUpdated: '更新时间', // 最后更新时间
   },
   configureWebpack: {
     resolve: {
       alias: {
-        '@alias': '/assets/image'
-      }
-    }
-  }
+        '@alias': '/assets/image',
+      },
+    },
+  },
 };
