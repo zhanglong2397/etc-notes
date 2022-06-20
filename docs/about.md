@@ -1,7 +1,7 @@
 ---
 navbar: false
 ---
-# Vue3 快速上手
+# Vue3 快速上手   
 
 <img src="https://user-images.githubusercontent.com/499550/93624428-53932780-f9ae-11ea-8d16-af949e16a09f.png" style="width:200px" />
 
